@@ -4,7 +4,7 @@ from sklearn.svm import SVR
 import matplotlib.pyplot as plt
 
 
-plt.switch_backend('newbackend')  
+plt.switch_backend('MacOSX')  
 
 
 
@@ -42,7 +42,7 @@ def predict_price(dates, prices, x):
 
 	return svr_rbf.predict(x)[0], svr_lin.predict(x)[0], svr_poly.predict(x)[0]
 
-get_data('aapl.csv') # calling get_data method by passing the csv file to it
+get_data('brk.a.csv') # calling get_data method by passing the csv file to it
 #print "Dates- ", dates
 #print "Prices- ", prices
 
